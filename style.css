@@ -1,0 +1,210 @@
+button {
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    align-self: center;
+    cursor: pointer;
+	flex-shrink: 0;
+}
+
+body {
+  margin: 0px;
+}
+
+.no-margin {
+    margin: 0px;
+}
+
+.primary {
+    border: 0px;
+    background-color: #EE255F;
+    color: #EEF4F7;
+}
+
+.secondary {
+    border: #EE255F solid 3px;
+    background-color: transparent;
+    color: #EE255F;
+}
+
+.round {
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    align-self: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    padding-inline: 10vw;
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+    border-bottom: #EE255F solid 2px;
+    position:sticky;
+    top: 0;
+    gap: 50vw;
+}
+
+.top {
+    margin-top: 15rem;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2A2B2D;
+    color: #EEF4F7;
+}
+
+h1 {
+    font-size:4rem;
+    font-weight: 900;
+    background-color: transparent;
+}
+
+@media only screen and (min-width: 600px){
+	.h1-responsive {
+		font-size: 4vw;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.h1-responsive {
+		font-size: 10vw;
+	}
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: #EE255F solid 2px;
+    text-align: center;
+}
+
+.fade-ftop {
+    animation: fadeftop 1s ease-in-out;
+}
+
+.fade-fleft {
+    animation: fadefleft 1s ease-in-out;
+}
+
+.fade-fright {
+    animation: fadefright 1s ease-in-out;
+}
+
+@keyframes fadeftop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadefleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadefright {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.game-promo {
+    background-image: url('/Images/JetBear/Stars.png');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2rem;
+    color: white;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.character img {
+  max-width: 300px;
+}
+
+.text {
+    max-width: 600px;
+	background-color: transparent;
+}
+
+div {
+    background-color: transparent;
+}
+
+p {
+	background-color: transparent;
+}
+
+img {
+	background-color: transparent;
+}
+
+.anim-float {
+	animation: float 3s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(-15px);
+	}
+	100% {
+		transform: translateY(15px);
+	}
+}
+
+.full {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	height: 100vh;
+}
