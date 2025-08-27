@@ -119,6 +119,8 @@ html, body {
 }
 
 .footer {
+    display: flex;
+    flex-direction: column;
     position: relative;
     left: 0;
     bottom: 0;
@@ -213,17 +215,10 @@ html, body {
 	background-color: transparent;
 }
 
-div {
+div, p, img, i {
     background-color: transparent;
 }
 
-p {
-	background-color: transparent;
-}
-
-img {
-	background-color: transparent;
-}
 
 .anim-float {
 	animation: float 3s ease-in-out infinite alternate;
@@ -244,4 +239,12 @@ img {
     align-items: center;
     justify-content: center;
 	height: 100vh;
+}
+
+i {
+    cursor: pointer;
+}
+
+strong {
+    font-weight: 600;
 }
