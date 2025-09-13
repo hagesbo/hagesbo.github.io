@@ -176,8 +176,15 @@ html, body {
 	}
 }
 
-.game-promo {
+.jetbear-promo {
 	background-image: url('/Images/JetBear/Stars.png');
+	background-size: cover;
+	background-position: center;
+	padding: 4rem 2rem;
+	color: white;
+}
+.mrscientist-promo {
+	background-image: url('/Images/MrScientist/header.jpg');
 	background-size: cover;
 	background-position: center;
 	padding: 4rem 2rem;
@@ -186,7 +193,15 @@ html, body {
 
 @media only screen and (min-width: 600px)
 {
-	.content {
+	.jetbear-content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: 1000px;
+		margin: 0 auto;
+		background-color: transparent;
+	}
+	.mrscientist-content {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -198,7 +213,15 @@ html, body {
 
 @media only screen and (max-width: 600px)
 {
-	.content {
+	.jetbear-content {
+		display: flex;
+		align-items: center;
+		flex-direction: column-reverse;
+		max-width: 1000px;
+		margin: 0 auto;
+		background-color: transparent;
+	}
+	.mrscientist-content {
 		display: flex;
 		align-items: center;
 		flex-direction: column-reverse;
@@ -208,7 +231,7 @@ html, body {
 	}
 }
 
-.character img {
+.jetbear-icon, .mrscientist-icon {
   max-width: 300px;
 }
 
